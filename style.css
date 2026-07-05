@@ -1,0 +1,14 @@
+body {
+    font-family: sans-serif;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#enterButton {
+    opacity: 0;
+    transition: 0.3s;
+}
+
+#enterButton.show {
+    opacity: 1;
+}
