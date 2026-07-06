@@ -1,32 +1,220 @@
-body {
-    font-family: sans-serif;
-    text-align: center;
-    margin-top: 100px;
-    background: #ffffff;
-    color: #111;
+/* ===========================
+   Federal Star Academy v0.2
+   style.css
+=========================== */
+
+body{
+
+    margin:0;
+
+    padding:40px;
+
+    background:#f4f5f7;
+
+    color:#222;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    text-align:center;
+
 }
 
-#enterButton {
-    opacity: 0;
-    transition: 0.3s;
-    margin-top: 10px;
-    padding: 8px 16px;
-    cursor: pointer;
+.page{
+
+    max-width:700px;
+
+    margin:auto;
+
 }
 
-#enterButton.show {
-    opacity: 1;
+h1{
+
+    font-size:42px;
+
+    margin-top:60px;
+
+    margin-bottom:30px;
+
+    letter-spacing:2px;
+
 }
 
-#playerPanel {
-    margin-top: 30px;
-    padding: 15px;
-    border: 1px solid #ccc;
-    display: inline-block;
-    text-align: left;
-    background: #f9f9f9;
+h2{
+
+    margin-top:40px;
+
 }
 
-#playerPanel h2 {
-    margin-top: 0;
+h3{
+
+    margin-top:25px;
+
+}
+
+p{
+
+    line-height:1.8;
+
+}
+
+button{
+
+    margin-top:25px;
+
+    padding:12px 32px;
+
+    border:none;
+
+    border-radius:8px;
+
+    background:#4b8bf4;
+
+    color:white;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+}
+
+button:hover{
+
+    background:#3677e8;
+
+}
+
+.form-group{
+
+    margin:28px 0;
+
+}
+
+label{
+
+    display:block;
+
+    margin-bottom:10px;
+
+    font-weight:bold;
+
+}
+
+/* radio 不换行 */
+
+.form-group input[type="radio"]{
+
+    margin-right:6px;
+
+}
+
+.form-group label:has(input[type="radio"]){
+
+    display:inline-block;
+
+    margin-right:20px;
+
+    font-weight:normal;
+
+}
+
+/* 输入框 */
+
+input[type="text"]{
+
+    width:260px;
+
+    padding:10px;
+
+    font-size:16px;
+
+    border:1px solid #bbb;
+
+    border-radius:6px;
+
+}
+
+/* 下拉框 */
+
+select{
+
+    width:280px;
+
+    padding:10px;
+
+    font-size:16px;
+
+    border-radius:6px;
+
+}
+
+/* Player Profile */
+
+#playerProfile{
+
+    background:white;
+
+    padding:25px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+    margin-bottom:30px;
+
+}
+
+#profileName{
+
+    font-size:34px;
+
+    margin-bottom:10px;
+
+}
+
+#playerProfile p{
+
+    font-size:18px;
+
+    margin:8px 0;
+
+}
+
+/* Event */
+
+#eventPanel{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    margin:25px 0;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+/* NPC */
+
+#npcPanel{
+
+    background:white;
+
+    padding:20px;
+
+    border-radius:12px;
+
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+
+}
+
+hr{
+
+    border:none;
+
+    border-top:1px solid #ddd;
+
+    margin:30px 0;
+
 }

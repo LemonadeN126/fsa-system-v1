@@ -1,39 +1,192 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Federal Star Academy</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-<!-- PAGE 1：军校入口 -->
-<div id="page1">
+    <!-- ========================= -->
+    <!-- Page 1 : Welcome -->
+    <!-- ========================= -->
 
-    <h1>FEDERAL STAR ACADEMY</h1>
+    <div id="page1" class="page">
 
-    <p>联邦第一星际军校</p>
+        <h1>Federal Star Academy</h1>
 
-    <p id="loadingText">Loading...</p>
+        <p>欢迎来到联邦第一星际军校。</p>
 
-    <button id="enterButton">ENTER</button>
+        <p>在这里，你将完成学业、结识同伴、抵御虫族。</p>
 
-</div>
+        <p>你的每一次选择，都会影响未来的人际关系与成长。</p>
 
-<!-- PAGE 2：玩家系统 -->
-<div id="page2" style="display:none;">
+        <br>
 
-    <h2>PLAYER PROFILE</h2>
+        <p id="loadingText">Loading...</p>
 
-    <p><strong>Name:</strong> Summer</p>
-    <p><strong>Gender:</strong> Male</p>
-    <p><strong>Role:</strong> Alpha</p>
-    <p><strong>Scent:</strong> Cedar ★★★★☆</p>
+        <button id="enterBtn">ENTER</button>
 
-</div>
+    </div>
 
-<script src="script.js"></script>
+    <!-- ========================= -->
+    <!-- Page 2 : Character Creation -->
+    <!-- ========================= -->
+
+    <div id="page2" class="page" style="display:none;">
+
+        <h2>Character Creation</h2>
+
+        <div class="form-group">
+
+            <label>Name</label>
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Enter your name">
+
+        </div>
+
+        <div class="form-group">
+
+            <label>ABO</label>
+
+            <label>
+                <input type="radio" name="abo" value="Alpha">
+                Alpha
+            </label>
+
+            <label>
+                <input type="radio" name="abo" value="Beta">
+                Beta
+            </label>
+
+            <label>
+                <input type="radio" name="abo" value="Omega">
+                Omega
+            </label>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Gender</label>
+
+            <label>
+                <input type="radio" name="gender" value="Male">
+                Male
+            </label>
+
+            <label>
+                <input type="radio" name="gender" value="Female">
+                Female
+            </label>
+
+        </div>
+
+        <div class="form-group">
+
+            <label>Information Scent</label>
+
+            <select id="playerScent">
+
+                <option value="">Select</option>
+
+                <option>Coffee</option>
+                <option>Cedar</option>
+                <option>Whiskey</option>
+                <option>Amber</option>
+
+                <option>Ocean</option>
+                <option>Rose</option>
+                <option>Jasmine</option>
+                <option>Black Tea</option>
+                <option>Pine</option>
+                <option>White Musk</option>
+
+                <option>Mint</option>
+                <option>Lemon</option>
+                <option>Green Tea</option>
+                <option>Apple</option>
+                <option>Bamboo</option>
+                <option>Cotton</option>
+
+                <option>Vanilla</option>
+                <option>Honey</option>
+                <option>Peach</option>
+                <option>Milk</option>
+
+            </select>
+
+        </div>
+
+        <button id="confirmBtn">
+            CONFIRM
+        </button>
+
+    </div>
+
+    <!-- ========================= -->
+    <!-- Page 3 : Main Page -->
+    <!-- ========================= -->
+
+    <div id="page3" class="page" style="display:none;">
+
+        <div id="playerProfile">
+
+            <h2 id="profileName">Summer</h2>
+
+            <p>
+
+                <span id="profileABO">Alpha</span>
+
+                ｜
+
+                <span id="profileGender">Male</span>
+
+            </p>
+
+            <p>
+
+                <span id="profileScent">Cedar</span>
+
+                ｜
+
+                <span id="profileLevel">★★★★★</span>
+
+            </p>
+
+        </div>
+
+        <hr>
+
+        <div id="eventPanel">
+
+            <h3>Month 1</h3>
+
+            <h4>Current Event</h4>
+
+            <p>TEST</p>
+
+        </div>
+
+        <hr>
+
+        <div id="npcPanel">
+
+            <h3>NPC</h3>
+
+            <p>TEST</p>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
 
 </body>
+
 </html>
