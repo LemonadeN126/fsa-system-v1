@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
@@ -43,10 +43,7 @@
         <div class="form-group">
 
             <label>Name</label>
-            <input
-                type="text"
-                id="playerName"
-                placeholder="Enter your name">
+            <input type="text" id="playerName" placeholder="Enter your name">
 
         </div>
 
@@ -135,6 +132,7 @@
 
     <div id="page3" class="page" style="display:none;">
 
+        <!-- 上：Player Profile -->
         <div id="playerProfile">
 
             <h2 id="profileName">Summer</h2>
@@ -163,74 +161,91 @@
 
         <hr>
 
+        <!-- 中：Current Event（待开发） -->
         <div id="eventPanel">
 
-            <h3>Month 1</h3>
+            <h3>📋 Current Event</h3>
 
-            <h4>Current Event</h4>
-
-            <p>TEST</p>
+            <div id="eventContent">
+                <p style="color:#888; font-style:italic;">故事剧情开发中...</p>
+                <p style="color:#888; font-size:0.9rem;">你的选择将在这里展开</p>
+            </div>
 
         </div>
 
         <hr>
 
+        <!-- 下：NPC 信息 -->
         <div id="npcPanel">
 
-            <h3>NPC</h3>
+            <h3>👥 NPC</h3>
 
-            <!-- 下：NPC 信息 -->
-<div id="npcPanel">
-    <h3>👥 NPC</h3>
-    <div class="npc-grid">
+            <div class="npc-grid">
 
-        <!-- 角色卡：Leon -->
-        <div class="npc-card" data-npc="leon">
-            <div class="npc-header">
-                <span class="npc-name">Leon</span>
-                <span class="npc-badge omega">Ω</span>
-            </div>
-            <div class="npc-tag">Omega ｜ Male</div>
-            <div class="npc-scent">Mint ｜ ★★★☆☆</div>
-            <div class="npc-stats">
-                <span>🧠 腺体健康: <span class="stat-value" id="leon-gland">100</span></span>
-                <span>💤 疲惫值: <span class="stat-value" id="leon-fatigue">0</span></span>
-            </div>
-            <button class="more-btn" data-npc="leon">more</button>
-        </div>
+                <!-- Leon -->
+                <div class="npc-card" data-npc="leon">
 
-        <!-- 角色卡：Iris -->
-        <div class="npc-card" data-npc="iris">
-            <div class="npc-header">
-                <span class="npc-name">Iris</span>
-                <span class="npc-badge beta">β</span>
-            </div>
-            <div class="npc-tag">Beta ｜ Female</div>
-            <div class="npc-scent">Ocean ｜ ★★★★☆</div>
-            <div class="npc-stats">
-                <span>🛠️ 职业能力: <span class="stat-value" id="iris-career">100</span></span>
-                <span>💤 疲惫值: <span class="stat-value" id="iris-fatigue">0</span></span>
-            </div>
-            <button class="more-btn" data-npc="iris">more</button>
-        </div>
+                    <div class="npc-header">
+                        <span class="npc-name">Leon</span>
+                        <span class="npc-badge omega">Ω</span>
+                    </div>
 
-        <!-- 角色卡：Raven -->
-        <div class="npc-card" data-npc="raven">
-            <div class="npc-header">
-                <span class="npc-name">Raven</span>
-                <span class="npc-badge alpha">α</span>
-            </div>
-            <div class="npc-tag">Alpha ｜ Male</div>
-            <div class="npc-scent">Coffee ｜ ★★★★★</div>
-            <div class="npc-stats">
-                <span>⚡ 精神稳定: <span class="stat-value" id="raven-mental">100</span></span>
-                <span>💤 疲惫值: <span class="stat-value" id="raven-fatigue">0</span></span>
-            </div>
-            <button class="more-btn" data-npc="raven">more</button>
-        </div>
+                    <div class="npc-tag">Omega ｜ Male</div>
 
-    </div>
-</div>
+                    <div class="npc-scent">Mint ｜ ★★★☆☆</div>
+
+                    <div class="npc-stats">
+                        <span>🧠 腺体健康: <span class="stat-value" id="leon-gland">100</span></span>
+                        <span>💤 疲惫值: <span class="stat-value" id="leon-fatigue">0</span></span>
+                    </div>
+
+                    <button class="more-btn" data-npc="leon">more</button>
+
+                </div>
+
+                <!-- Iris -->
+                <div class="npc-card" data-npc="iris">
+
+                    <div class="npc-header">
+                        <span class="npc-name">Iris</span>
+                        <span class="npc-badge beta">β</span>
+                    </div>
+
+                    <div class="npc-tag">Beta ｜ Female</div>
+
+                    <div class="npc-scent">Ocean ｜ ★★★★☆</div>
+
+                    <div class="npc-stats">
+                        <span>🛠️ 职业能力: <span class="stat-value" id="iris-career">100</span></span>
+                        <span>💤 疲惫值: <span class="stat-value" id="iris-fatigue">0</span></span>
+                    </div>
+
+                    <button class="more-btn" data-npc="iris">more</button>
+
+                </div>
+
+                <!-- Raven -->
+                <div class="npc-card" data-npc="raven">
+
+                    <div class="npc-header">
+                        <span class="npc-name">Raven</span>
+                        <span class="npc-badge alpha">α</span>
+                    </div>
+
+                    <div class="npc-tag">Alpha ｜ Male</div>
+
+                    <div class="npc-scent">Coffee ｜ ★★★★★</div>
+
+                    <div class="npc-stats">
+                        <span>⚡ 精神稳定: <span class="stat-value" id="raven-mental">100</span></span>
+                        <span>💤 疲惫值: <span class="stat-value" id="raven-fatigue">0</span></span>
+                    </div>
+
+                    <button class="more-btn" data-npc="raven">more</button>
+
+                </div>
+
+            </div>
 
         </div>
 

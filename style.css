@@ -3,223 +3,136 @@
    style.css
 =========================== */
 
-body{
-
-    margin:0;
-
-    padding:40px;
-
-    background:#f4f5f7;
-
-    color:#222;
-
-    font-family:Arial, Helvetica, sans-serif;
-
-    text-align:center;
-
+* {
+    box-sizing: border-box;
 }
 
-.page{
-
-    max-width:700px;
-
-    margin:auto;
-
+body {
+    margin: 0;
+    padding: 40px 20px;
+    background: #f4f5f7;
+    color: #222;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
 }
 
-h1{
-
-    font-size:42px;
-
-    margin-top:60px;
-
-    margin-bottom:30px;
-
-    letter-spacing:2px;
-
+.page {
+    max-width: 700px;
+    margin: 0 auto;
 }
 
-h2{
-
-    margin-top:40px;
-
+h1 {
+    font-size: 42px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    letter-spacing: 2px;
 }
 
-h3{
-
-    margin-top:25px;
-
+h2 {
+    margin-top: 40px;
 }
 
-p{
-
-    line-height:1.8;
-
+h3 {
+    margin-top: 25px;
 }
 
-button{
-
-    margin-top:25px;
-
-    padding:12px 32px;
-
-    border:none;
-
-    border-radius:8px;
-
-    background:#4b8bf4;
-
-    color:white;
-
-    font-size:16px;
-
-    cursor:pointer;
-
+p {
+    line-height: 1.8;
 }
 
-button:hover{
-
-    background:#3677e8;
-
+button {
+    margin-top: 25px;
+    padding: 12px 32px;
+    border: none;
+    border-radius: 8px;
+    background: #4b8bf4;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
 }
 
-.form-group{
-
-    margin:28px 0;
-
+button:hover {
+    background: #3677e8;
 }
 
-label{
-
-    display:block;
-
-    margin-bottom:10px;
-
-    font-weight:bold;
-
+/* ===== 表单 ===== */
+.form-group {
+    margin: 28px 0;
 }
 
-/* radio 不换行 */
-
-.form-group input[type="radio"]{
-
-    margin-right:6px;
-
+label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
 }
 
-.form-group label:has(input[type="radio"]){
-
-    display:inline-block;
-
-    margin-right:20px;
-
-    font-weight:normal;
-
+.form-group input[type="radio"] {
+    margin-right: 6px;
 }
 
-/* 输入框 */
-
-input[type="text"]{
-
-    width:260px;
-
-    padding:10px;
-
-    font-size:16px;
-
-    border:1px solid #bbb;
-
-    border-radius:6px;
-
+.form-group label:has(input[type="radio"]) {
+    display: inline-block;
+    margin-right: 20px;
+    font-weight: normal;
 }
 
-/* 下拉框 */
-
-select{
-
-    width:280px;
-
-    padding:10px;
-
-    font-size:16px;
-
-    border-radius:6px;
-
+input[type="text"] {
+    width: 260px;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #bbb;
+    border-radius: 6px;
 }
 
-/* Player Profile */
-
-#playerProfile{
-
-    background:white;
-
-    padding:25px;
-
-    border-radius:12px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
-    margin-bottom:30px;
-
+select {
+    width: 280px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
 }
 
-#profileName{
-
-    font-size:34px;
-
-    margin-bottom:10px;
-
+/* ===== Player Profile ===== */
+#playerProfile {
+    background: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+    margin-bottom: 30px;
 }
 
-#playerProfile p{
-
-    font-size:18px;
-
-    margin:8px 0;
-
+#profileName {
+    font-size: 34px;
+    margin-bottom: 10px;
 }
 
-/* Event */
-
-#eventPanel{
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    margin:25px 0;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
+#playerProfile p {
+    font-size: 18px;
+    margin: 8px 0;
 }
 
-/* NPC */
-
-#npcPanel{
-
-    background:white;
-
-    padding:20px;
-
-    border-radius:12px;
-
-    box-shadow:0 2px 10px rgba(0,0,0,.08);
-
+/* ===== Event Panel ===== */
+#eventPanel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 25px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+    min-height: 120px;
 }
 
-hr{
-
-    border:none;
-
-    border-top:1px solid #ddd;
-
-    margin:30px 0;
-
+#eventContent {
+    line-height: 1.8;
+    padding: 10px 0;
 }
 
-/* ===== NPC 角色卡 ===== */
+/* ===== NPC 区域 ===== */
+#npcPanel {
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .08);
+}
+
 .npc-grid {
     display: flex;
     gap: 16px;
@@ -232,8 +145,11 @@ hr{
     background: white;
     border-radius: 14px;
     padding: 18px 20px 16px;
-    width: 180px;
-    box-shadow: 0 2px 10px rgba(0,0,0,.06);
+    width: 190px;
+    min-width: 160px;
+    flex: 1 0 auto;
+    max-width: 220px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, .06);
     border: 1px solid #eaeef3;
     transition: transform .2s, box-shadow .2s;
     text-align: left;
@@ -241,7 +157,7 @@ hr{
 
 .npc-card:hover {
     transform: translateY(-3px);
-    box-shadow: 0 6px 20px rgba(0,0,0,.10);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, .10);
 }
 
 .npc-header {
@@ -265,9 +181,17 @@ hr{
     color: white;
 }
 
-.npc-badge.alpha { background: #c0392b; }
-.npc-badge.beta  { background: #2c7a7a; }
-.npc-badge.omega { background: #8e44ad; }
+.npc-badge.alpha {
+    background: #c0392b;
+}
+
+.npc-badge.beta {
+    background: #2c7a7a;
+}
+
+.npc-badge.omega {
+    background: #8e44ad;
+}
 
 .npc-tag {
     font-size: 13px;
@@ -323,7 +247,7 @@ hr{
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,.45);
+    background: rgba(0, 0, 0, .45);
     backdrop-filter: blur(3px);
     display: flex;
     justify-content: center;
@@ -338,7 +262,7 @@ hr{
     padding: 32px 36px 28px;
     max-width: 380px;
     width: 90%;
-    box-shadow: 0 20px 60px rgba(0,0,0,.25);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, .25);
     animation: slideUp .3s ease;
     text-align: left;
 }
@@ -404,22 +328,60 @@ hr{
 
 /* ===== 动画 ===== */
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
 
 @keyframes slideUp {
-    from { transform: translateY(30px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+    from {
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
-/* ===== 响应式：手机适配 ===== */
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 30px 0;
+}
+
+/* ===== 响应式 ===== */
 @media (max-width: 600px) {
+    body {
+        padding: 20px 12px;
+    }
+
+    h1 {
+        font-size: 28px;
+        margin-top: 30px;
+    }
+
     .npc-card {
         width: 100%;
-        max-width: 280px;
+        max-width: 300px;
+        flex: 1 1 100%;
     }
+
+    .npc-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
     .modal-box {
         padding: 24px 20px 20px;
+    }
+
+    input[type="text"],
+    select {
+        width: 100%;
+        max-width: 300px;
     }
 }
